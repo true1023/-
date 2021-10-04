@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>今天吃什么</title>
+        <style type="text/css">
+            h1 {
+                font-size: 5em;
+            }
+            .main{
+                text-align: center;
+                background-color: #fff;
+                border-radius: 20px;
+                width: 300px;
+                height: 350px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        </style>
+    </head>
+    <body>
+    </body>
+<script>
+    var foods = new Array();
+    foods[0] = "火锅"
+    foods[1] = "炒菜"
+    foods[2] = "烧烤"
+    index = Math.floor(Math.random() * 10) % 3
+    document.write("<div class='main'><h1>"+foods[index]+"</h1></div>")
+</script>
+</html>
